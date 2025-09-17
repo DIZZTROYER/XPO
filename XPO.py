@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 class Config:
     def __init__(self):
-        self.api_ip = '192.168.2.132'
+        self.api_ip = '127.0.0.1'
         self.api_port = '8080'
         self.rate_window = 60
         self.syn_threshold = 50
@@ -94,7 +94,7 @@ def check_credentials(packet):
 
 # Argparse and init
 parser = argparse.ArgumentParser()
-parser.add_argument('--ip', default='192.168.2.132')
+parser.add_argument('--ip', default='127.0.0.1')
 parser.add_argument('--port', default='8080')
 args = parser.parse_args()
 config = Config()
@@ -177,4 +177,5 @@ except KeyboardInterrupt:
     logging.info("Stopped by user")
 finally:
     capture.close()
+
     logging.info("Capture closed")
