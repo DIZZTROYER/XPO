@@ -24,8 +24,8 @@ Requirements.
  Installation
 1. Clone the repository:
 
-   git clone <your-repo-url>
-   cd <repo-directory>
+   git clone https://github.com/DIZZTROYER/XPO
+   cd XPO
    
 2. Create a virtual environment and activate it
 
