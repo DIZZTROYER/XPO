@@ -1,3 +1,15 @@
+
+# Banner 
+print("=" * 50)
+print("=== XPO 1.0 ===")
+print("=" * 50)
+print("Welcome to your eyes")
+print("-" * 50)
+print("Intrusion Detection System (IDS)")
+print("Monitoring your network with care...")
+print("-" * 50)
+print()
+
 import pyshark
 import netifaces
 import ipaddress
@@ -179,4 +191,5 @@ finally:
     capture.close()
 
     logging.info("Capture closed")
+
 
