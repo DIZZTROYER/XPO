@@ -92,7 +92,7 @@ def check_credentials(packet):
         return f"CREDS: {creds} from {packet.ip.src}:{packet.tcp.srcport}"
     return None
 
-# Argparse and init
+# Argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--ip', default='127.0.0.1')
 parser.add_argument('--port', default='8080')
@@ -179,3 +179,4 @@ finally:
     capture.close()
 
     logging.info("Capture closed")
+
