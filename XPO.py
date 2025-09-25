@@ -1,7 +1,7 @@
 
 # Banner 
 print("=" * 50)
-print("=== XPO 1.0 ===")
+print("===== XPO 1.0 =====")
 print("=" * 50)
 print("Welcome to your eyes")
 print("-" * 50)
@@ -191,5 +191,6 @@ finally:
     capture.close()
 
     logging.info("Capture closed")
+
 
 
